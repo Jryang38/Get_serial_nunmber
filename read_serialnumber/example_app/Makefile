@@ -1,6 +1,6 @@
 CC=gcc
 CFLAGS=-Wall -Wextra -pedantic
-LDFLAGS=-L. -lserverserial
+LDFLAGS=-L../lib/ -lserverserial -Wl,-rpath=../lib
 
 APP_NAME=test
 SOURCE=main.c
